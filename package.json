@@ -1,0 +1,25 @@
+{
+  "name": "nightgate",
+  "version": "0.1.0",
+  "description": "Filters what overnight coding agents ask you down to the decisions only you can make — judged by Muse Glimmer on your own hardware, trained on your own decisions.",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.18"
+  },
+  "bin": {
+    "nightgate": "./src/cli.ts"
+  },
+  "scripts": {
+    "start": "node src/cli.ts serve",
+    "review": "node src/cli.ts review",
+    "morning": "node src/cli.ts morning",
+    "test": "node --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "typescript": "^5.9.0"
+  }
+}

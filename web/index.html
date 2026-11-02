@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nightgate console</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">Nightgate <span class="sub">what your overnight agents need from you</span></div>
+    <div class="chips" id="chips"></div>
+  </header>
+
+  <main class="grid">
+    <section class="panel terminals">
+      <h2>Terminals <span class="hint">live from CLI Manager</span></h2>
+      <ul id="sessions" class="sessions"></ul>
+      <div class="screen-head" id="screen-head">Pick a terminal</div>
+      <pre id="screen" class="screen"></pre>
+    </section>
+
+    <section class="panel morning">
+      <h2>This morning
+        <button id="review-btn" class="btn">Review new cards</button>
+        <span id="review-progress" class="hint"></span>
+      </h2>
+      <div id="counts" class="counts"></div>
+      <div id="human" class="items"></div>
+      <details id="sent-back-box"><summary id="sent-back-title"></summary><div id="sent-back" class="items"></div></details>
+      <details id="handled-box"><summary id="handled-title"></summary><div id="handled" class="items"></div></details>
+      <div id="claims" class="claims"></div>
+    </section>
+
+    <section class="panel training">
+      <h2>Learning <span class="hint">your decisions → Glimmer LoRA</span></h2>
+      <div id="training"></div>
+    </section>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

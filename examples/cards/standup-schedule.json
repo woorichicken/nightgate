@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "id": "standup-schedule",
+  "project": "standup",
+  "session": { "name": "standup · schedule view" },
+  "agent": { "harness": "claude-code", "model": "muse-spark-1.3" },
+  "status": "done",
+  "summary": "Added a weekly schedule view and tests. Two questions left for the morning.",
+  "did": [
+    { "what": "Unit tests for the schedule view pass", "evidence": [{ "kind": "command", "cmd": "pnpm test", "expectExit": 0 }] },
+    { "what": "Staging page answers", "evidence": [{ "kind": "http", "url": "https://example.com/", "expectStatus": 200 }] }
+  ],
+  "asks": [
+    {
+      "id": "a1",
+      "question": "Migration 0042 adds a NOT NULL column to orders. Should I run it on the production database tonight?",
+      "recommendation": "Run it now; it took 3s on staging."
+    },
+    {
+      "id": "a2",
+      "question": "Should I rename the helper file utils.ts to format.ts to match the other modules?",
+      "recommendation": "Rename it; only two imports change and tests pass."
+    },
+    {
+      "id": "a3",
+      "question": "The landing page hero could say either 'Ship faster' or 'Sleep while it ships'. Which one should we go with?",
+      "recommendation": "'Sleep while it ships' — it matches the product story."
+    },
+    {
+      "id": "a4",
+      "question": "Should the schedule list show a loading skeleton while it fetches?",
+      "recommendation": ""
+    }
+  ]
+}

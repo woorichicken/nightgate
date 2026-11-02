@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "id": "docs-cleanup",
+  "project": "docs",
+  "session": { "name": "docs · cleanup" },
+  "agent": { "harness": "codex", "model": "gpt-5" },
+  "status": "partial",
+  "summary": "Reorganised the docs folder; the branch is ready but not pushed.",
+  "did": [
+    { "what": "New index page exists", "evidence": [{ "kind": "file", "path": "/tmp/nightgate-demo-missing-index.md" }] }
+  ],
+  "asks": [
+    {
+      "id": "a1",
+      "question": "The docs branch is ready. Should I git push it to origin and open a PR?",
+      "recommendation": "Push and open the PR; CI is green locally."
+    },
+    {
+      "id": "a2",
+      "question": "Should I split the long README into README.md and docs/setup.md?",
+      "recommendation": "Split it; the setup half is 300 lines."
+    }
+  ]
+}
