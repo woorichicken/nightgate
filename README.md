@@ -2,6 +2,8 @@
 
 **Your coding agents work all night. In the morning, Nightgate shows you only the decisions that are yours.**
 
+**Demo video (1.5 min):** [docs/demo.mp4](docs/demo.mp4)
+
 Overnight agents leave a pile of "please decide" behind. On my first supervised night there were 16 such
 asks; only 6 actually needed me. The rest were things the agent could have settled with its own
 recommendation. Nightgate is the gate in between: every agent writes the same report card, a Meta model
