@@ -1,7 +1,7 @@
 {
   "name": "nightgate",
   "version": "0.1.0",
-  "description": "Filters what overnight coding agents ask you down to the decisions only you can make — judged by Muse Glimmer on your own hardware, trained on your own decisions.",
+  "description": "Filters what overnight coding agents ask you down to the decisions only you can make — judged by Muse Glimmer on local hardware, trained on your own decisions.",
   "license": "MIT",
   "type": "module",
   "private": true,

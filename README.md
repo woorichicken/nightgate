@@ -7,12 +7,12 @@ asks; only 6 actually needed me. The rest were things the agent could have settl
 recommendation. Nightgate is the gate in between: every agent writes the same report card, a Meta model
 judges each ask against six kinds of decision that belong to a human, claims like "tests pass" are
 re-checked, and the morning page keeps only what is yours. Every "this needed me / it didn't" you click
-becomes training data for the judge, which runs on hardware you own.
+becomes training data for the judge, which runs locally on a DGX Spark (a shared company machine in our case).
 
 ## How it works
 
 ```
- Mac mini (agents)                      DGX Spark (our own box)              Meta Model API
+ Mac mini (agents)                      DGX Spark (local, shared)            Meta Model API
  ─────────────────                      ───────────────────────              ──────────────
  CLI Manager terminals                  Muse Glimmer 30B (GGUF, Ollama)      Muse Spark
    │ each agent writes a report card       ▲ tier 1: every ask                  ▲ tier 2: only unsure,
